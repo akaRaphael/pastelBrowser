@@ -1,0 +1,125 @@
+body {
+  background-color: midnightblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Jua", sans-serif;
+  overflow: hidden;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  margin-top: 1vh;
+}
+.quote-container h1 {
+  font-size: 3vh;
+}
+.quote-container span {
+  font-size: 2vh;
+  font-weight: bold;
+}
+.weather-container {
+  font-size: 3vh;
+  margin-top: -6vh;
+  margin-bottom: 5vh;
+}
+.clock-container {
+  width: 50%;
+  margin-top: 2vh;
+}
+.clock-container h1 {
+  font-size: 10vh;
+}
+
+.js-clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greetings {
+  font-size: 3vh;
+  margin-bottom: -0.2vw;
+}
+
+.toDo-input,
+.name-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px dashed black;
+  font-size: 2.2vh;
+  font-family: "Jua", sans-serif;
+  margin-top: 4vh;
+  width: 25vh;
+}
+
+.toDo-input::placeholder,
+.name-input::placeholder {
+  color: black;
+  font-size: 2.5vh;
+}
+
+.toDo-input:focus,
+.name-input:focus {
+  outline: none;
+}
+
+.toDoList-container {
+  width: 27vh;
+}
+
+.js-toDoList li {
+  margin-bottom: 1vh;
+  width: 30vh;
+  margin-left: 5vh;
+}
+
+.js-toDoList li span {
+  margin-right: 0.5vw;
+  font-size: 2vh;
+}
+
+.js-toDoList li button {
+  background-color: transparent;
+  border: none;
+}
+.js-toDoList li button:focus {
+  outline: none;
+}
